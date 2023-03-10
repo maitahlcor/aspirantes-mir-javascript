@@ -1,5 +1,6 @@
 function bmi(peso, talla) {
     try{
+        //let imc = (peso)/(talla*talla)
         let imc = (peso)/(talla^2)
         console.log(`Su IMC es ${imc}`);
         return imc
