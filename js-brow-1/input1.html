@@ -12,8 +12,9 @@
       <p id="resultado"></p>
       <script>
         let input = document.querySelector('#texto');
+        let boton = document.querySelector('.btn');
         let resultado = document.querySelector('#resultado');
-        input.addEventListener('input', function() {
+        boton.addEventListener('click', function() {
           const texto = input.value;
           resultado.textContent = texto;
         });
@@ -23,7 +24,7 @@
       <script>
         input = document.querySelector('#texto');
         resultado2 = document.querySelector('#resultadoMayusculas');
-        input.addEventListener('input', function() {
+        boton.addEventListener('click', function() {
           const texto = input.value.toUpperCase();
           resultado2.textContent = texto;
         });
