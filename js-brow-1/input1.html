@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Mayúsculas</title>
-  </head>
-  <body>
-    <label for="texto">Escribe algo:</label>
-    <input type="text" id="texto">
-    <button class="btn">Convertir mensaje a mayusculas</button>
-    <!-- aca va el resultado tal cual se escribe -->
-    <p id="resultado"></p>
-    <script>
-        const input = document.querySelector('#texto');
-        const resultado = document.querySelector('#resultado');
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Mayúsculas</title>
+    </head>
+    <body>
+      <label for="texto">Escribe algo:</label>
+      <input type="text" id="texto">
+      <button class="btn">Convertir mensaje a mayusculas</button>
+      <!-- aca va el resultado tal cual se escribe -->
+      <p id="resultado"></p>
+      <script>
+        let input = document.querySelector('#texto');
+        let resultado = document.querySelector('#resultado');
         input.addEventListener('input', function() {
-            const texto = input.value.toUpperCase();
-            resultado.textContent = texto;
-          });
-    </script>
-    <p id="resultadoMayusculas"></p>
-  </body>
-</html>
+          const texto = input.value;
+          resultado.textContent = texto;
+        });
+      </script>
+      <!-- aca va el resultado en mayusculas -->
+      <p id="resultadoMayusculas"></p>
+      <script>
+        input = document.querySelector('#texto');
+        resultado2 = document.querySelector('#resultadoMayusculas');
+        input.addEventListener('input', function() {
+          const texto = input.value.toUpperCase();
+          resultado2.textContent = texto;
+        });
+      </script>
+    
+    </body>
+  </html>
