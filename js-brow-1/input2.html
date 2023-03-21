@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Palindromo</title>
+    </head>
+    <body>
+      <label for="texto">Escribe algo:</label>
+      <input type="text" id="texto">
+      <button class="btn">Validar</button>
+      <p id="resultado"></p>
+      <script>
+        let input = document.querySelector('#texto');
+        let boton = document.querySelector('.btn');
+        let resultado = document.querySelector('#resultado');
+        boton.addEventListener('click', function() {
+          const str = input.value;
+          const strReversed = str.split("").reverse().join("");
+          if (strReversed === str){
+            resultado.textContent  = "es palindromo";
+          }else{
+            resultado.textContent  = "no es palindromo";
+          }
+        });
+      </script>
+    </body>
+  </html>
