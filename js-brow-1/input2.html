@@ -14,8 +14,8 @@
         let boton = document.querySelector('.btn');
         let resultado = document.querySelector('#resultado');
         boton.addEventListener('click', function() {
-          const str = input.value;
-          const strReversed = str.split("").reverse().join("");
+          let str = input.value;
+          let strReversed = str.split("").reverse().join("");
           if (strReversed === str){
             resultado.textContent  = "es palindromo";
           }else{
